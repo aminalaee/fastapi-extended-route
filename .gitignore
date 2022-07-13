@@ -1,0 +1,15 @@
+*.egg-info/
+*.pyc
+__pycache__/
+[.][v]env/
+build
+dist
+.cache
+.coverage
+.eggs
+.tox
+.vscode
+.pytest_cache
+.mypy_cache
+coverage/
+cov_report
