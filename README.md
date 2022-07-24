@@ -22,7 +22,7 @@ from fastapi_extended_route import Request, Route
 
 def index(request: Request) -> PlainTextResponse:
     url = request.url_for("index", key=value)
-    # str(url) == "http://testserver/?key=value"
+    # url == "http://testserver/?key=value"
     return PlainTextResponse(url)
 
 app = FastAPI(

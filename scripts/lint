@@ -1,0 +1,13 @@
+#!/bin/sh -e
+
+if [ -d 'venv' ] ; then
+    PREFIX="venv/bin/"
+else
+    PREFIX=""
+fi
+SOURCE_FILES="fastapi_extended_route tests"
+
+set -x
+
+${PREFIX}isort --project=fastapi_extended_route ${SOURCE_FILES}
+${PREFIX}black ${SOURCE_FILES}
